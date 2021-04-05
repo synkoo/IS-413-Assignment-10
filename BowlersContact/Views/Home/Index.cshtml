@@ -8,16 +8,39 @@
     <h3>@Model.Team</h3>
 </div>
 
+@*Contact List*@
 
-@foreach (var x in Model.Bowlers)
-{
-    <div class="row card card-outline-primary m-1 p-3 shadow-sm fixed-width-item">
-        <h4>@x.BowlerFirstName @x.BowlerMiddleInit @x.BowlerLastName</h4>
-        <p>Address: @x.BowlerAddress</p>
-        <p class="pl-8">@x.BowlerCity, @x.BowlerState | @x.BowlerZip</p>
-        <p><b>Phone Number:</b> @x.BowlerPhoneNumber</p>
-    </div>
-}
+<div>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Middle Initial</th>
+                <th>Last Name</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Zip</th>
+                <th>Phone Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var x in Model.Bowlers)
+            {
+                <tr>
+                    <td>@x.BowlerFirstName</td>
+                    <td>@x.BowlerMiddleInit</td>
+                    <td>@x.BowlerLastName</td>
+                    <td>@x.BowlerAddress</td>
+                    <td>@x.BowlerCity</td>
+                    <td>@x.BowlerState</td>
+                    <td>@x.BowlerZip</td>
+                    <td>@x.BowlerPhoneNumber</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
 
 <div page-info="@Model.PageNumberingInfo" page-url-team="@Model.Team"
      page-classes-enabled="true"
