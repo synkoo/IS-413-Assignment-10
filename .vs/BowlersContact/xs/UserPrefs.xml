@@ -1,8 +1,9 @@
 ﻿<Properties StartupConfiguration="{CB8EB10E-6EE8-4649-B9F8-BBABFC471C0D}|Default">
   <MonoDevelop.Ide.ItemProperties.BowlersContact PreferredExecutionTarget="/Applications/Brave Browser.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BowlersContact/Controllers/HomeController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BowlersContact/Views/Home/Index.cshtml">
     <Files>
       <File FileName="BowlersContact/Controllers/HomeController.cs" Line="51" Column="21" IsPinned="True" />
+      <File FileName="BowlersContact/Views/Home/Index.cshtml" Line="20" Column="33" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,15 +11,15 @@
           <Node name="BowlersContact" expanded="True">
             <Node name="BowlersContact" expanded="True">
               <Node name="Components" expanded="True" />
-              <Node name="Controllers" expanded="True">
-                <Node name="HomeController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Infrastructure" expanded="True" />
               <Node name="Models" expanded="True">
                 <Node name="ViewModels" expanded="True" />
               </Node>
               <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True" />
+                <Node name="Home" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
+                </Node>
                 <Node name="Shared" expanded="True">
                   <Node name="Components" expanded="True">
                     <Node name="Team" expanded="True" />
